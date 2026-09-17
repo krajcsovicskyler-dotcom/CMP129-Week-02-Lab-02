@@ -1,49 +1,41 @@
-import java.util.Scanner;
 public class Person {
-    private static Scanner input = new Scanner(System.in);
-    private String name = input.nextLine();
-    private int age = input.nextInt();
-    private String email = input.nextLine();
+    private String name;
+    private int age;
+    private String email;
 
-    public String getName()
+    String getName()
     {
-        return name;
+        return this.name;
     }//ends getName
 
-    private String setName()
+    void setName(String name)
     {
-        System.out.println("Please enter your name.");
-        Person.name = name;
-        return name;
+        this.name = name;
     }//ends setName
 
-    public int getAge()
+    int getAge()
     {
-        return age;
+        return this.age;
     }//engs getAge
 
-    private int setAge()
+    void setAge(int age)
     {
-        System.out.println("Please enter your age.");
-        Person.age = age;
-        return age;
+        this.age = age;
     }//ends setAge
 
-    public String getEmail()
+    String getEmail()
     {
-        return email;
+        return this.email;
     }//ends getEmail
 
-    private String setEmail(String email)
+    void setEmail(String email)
     {
-        System.out.println("Please eneter your email.");
-        Person.email = email;
-        return email;
+        this.email = email;
     }//ends setEmail
 
-    public String displayInfo(String n, int a, String e)
+    String displayInfo(String this.name, int this.age, String this.email)
     {
-        String info = "Personal Information\n-----------------\nName: " + n + "\nAge: " + a + "\nEmail: " + e;
+        String info = "Personal Information\n-----------------\nName: " + this.name + "\nAge: " + this.age + "\nEmail: " + this.email;
         return info;
     }//ends displayInfo
 
